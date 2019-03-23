@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="description" content="10 - Multiples Objetos Ikea">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shopping cart</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <main>
+  	<section class="container">
+      <div id="colItems">
+        <template id="item"> 
+          <div id="display">
+            <h1 id="nombre"></h1>
+            <p id="description"></p>
+            <div id="fotografia">
+  	          <img src="" id="foto-producto">
+            </div> 
+    	      <span id="precioo"></span>
+            <div id="comprar-unidad">
+              <form id="seleccionar-cantidad">
+                <label for="cantidad">Cantidad</label>
+      	        <input type="number" name="cantidad" id="cantidad" min="1" max="10">
+              </form>
+            <button id="boton-carrito">Añadir al carrito</button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <section class="carro">
+   	  <h1>Tu lista de la compra</h1>
+     		<div class="fila-principal">
+    	 		<span id="nombre-añadido">Nombre</span>
+          <span id="cantidad-añadida">Cantidad</span>
+          <span id="precio">Precio u.</span>
+     		</div>
+        <div class="fila-item"></div>
+        <div id="total">          
+          <span><b>Total:</b></span>
+          <span id="total-en-carrito"></span>
+        </fiv>
+      <div>
+    	<button id="boton-comprar">Comprar</button>
+      <div id="caja-mensaje">
+    	 <span id="mensaje-compra"></span>
+      </div>
+    </section>
+      <template class="estructura-carrito">
+        <div class="articulos-en-carrito">
+          <span id="nombre-en-carrito"></span>
+          <span id="cantidad-en-carrito">Cantidad</span>
+          <span id="precio-en-carrito">Precio u.</span>
+        </div>
+      </template>
+ </main>
+ <script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>

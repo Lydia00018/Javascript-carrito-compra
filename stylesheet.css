@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Laila:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	font-family: 'Laila', serif;
+}
+
+main{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 30px 30px 0px 30px;
+}
+
+h1{
+	font-size: medium;
+}
+
+button{
+	background-color: #4CAF50;
+  	border: none;
+  	color: white;
+  	padding: 8px 16px;
+  	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*Productos*/
+#foto-producto{
+	height: 300px;
+}
+
+#colItems{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	text-align: center;
+}
+
+#display{
+	margin-right: 30px;
+	width: 400px;
+}
+
+#comprar-unidad{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+#seleccionar-cantidad input{
+	height: 29px;
+	width: 29px;
+	text-align: center;
+	border: 1px solid #4CAF50;
+	border-radius: 5px;
+  	transition: border-color .5s ease-out;
+}
+
+/*Carro de la compra*/
+
+.carro{
+	display: flex;
+    flex-direction: column;
+}
+
+.fila-principal, .articulos-en-carrito{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.fila-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: small;
+	background-color: #f2f2f2;
+}
+
+#nombre-en-carrito, #nombre-añadido{
+	width: 150px;
+}
+
+#cantidad-en-carrito, #cantidad-añadida, #precio, #precio-en-carrito{
+	width: 100px;
+}
+
+ #nombre-añadido, #cantidad-añadida, #precio{
+ 	background-color: #4CAF50;
+ 	color: white;
+ 	padding: 5px 10px;
+ 	font-size: medium;
+ }
+
+#nombre-en-carrito, #precio-en-carrito, #cantidad-en-carrito{
+	padding: 5px 10px;
+	font-size: small;
+	text-align: center;
+}
+
+#total{
+	width: 410px;
+	text-align: center;
+	height: 30px;
+	background-color: #f2f2f2
+}
+
+#total:hover{
+	background-color: #ddd;
+}
+
+#boton-comprar{
+	margin-bottom: 20px;
+	width: 410px;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: bold;
+	background-color: rgb(25,69,85);
+}
+
+#caja-mensaje{
+	width: 410px;
+	color: rgb(25,69,85);
+	text-align: center;
+	margin-top: 40px;
+}
